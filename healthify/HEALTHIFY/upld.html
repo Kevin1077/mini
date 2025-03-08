@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Report Upload</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 2rem;
+    }
+    header {
+      background-color: #3b637d;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #87bdd8;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .upload-container {
+      background-color: white;
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .upload-container h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    input[type="file"], input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #477dd3;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #3b637d;
+    }
+    footer {
+      background-color: #667292;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Health Management Platform</h1>
+    <p>Analyze your health reports and get personalized recommendations</p>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="upld.html">Upload Reports</a>
+  </nav>
+
+  <div class="upload-container">
+    <h1>Upload Your Health Report</h1>
+    <form id="uploadForm">
+      <div class="form-group">
+        <label for="report-title">Report Title</label>
+        <input type="text" id="report-title" name="report-title" placeholder="Enter report title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="report-file">Upload Report File</label>
+        <input type="file" id="report-file" name="report-file" accept=".pdf, .docx, .xlsx, .jpg, .png" required>
+      </div>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 healyhfy group of Management. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent actual form submission
+
+      // Show alert or confirmation message (optional)
+      alert("Report uploaded successfully! Redirecting to home page...");
+
+      // Redirect to home page
+      window.location.href = "home.html";
+    });
+  </script>
+</body>
+</html>
