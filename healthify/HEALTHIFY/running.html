@@ -11,9 +11,9 @@
       box-sizing: border-box;
     }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: white;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
       text-align: center;
       padding: 2rem;
     }
@@ -21,31 +21,52 @@
       max-width: 800px;
       margin: auto;
       background: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
     }
-    h1 {
+    .container:hover {
+      transform: scale(1.02);
+    }
+    h1, h2 {
       color: #4CAF50;
+      margin-bottom: 10px;
+    }
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    ul {
+      text-align: left;
+      display: inline-block;
+      margin: 10px auto;
+      padding-left: 20px;
     }
     .exercise-img {
       width: 100%;
       max-width: 400px;
       border-radius: 10px;
       margin: 20px 0;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     }
     .home-btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
+      padding: 12px 25px;
       background: #4CAF50;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      box-shadow: 0 0 5px white;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     }
     .home-btn:hover {
       background: #45a049;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -56,22 +77,20 @@
     <p>Running is a highly effective cardiovascular exercise that helps in improving heart health, burning calories, and building endurance. It engages multiple muscle groups and can be performed anywhere.</p>
     
     <h2>Benefits of Running</h2>
-    <ul>
-      <li>Improves cardiovascular health</li>
-      <li>Burns calories and aids in weight management</li>
-      <li>Enhances lung capacity and endurance</li>
-      <li>Strengthens leg muscles</li>
-      <li>Boosts mental health and reduces stress</li>
-    </ul>
+    <p>✔ Improves cardiovascular health</p>
+    <p>✔ Burns calories and aids in weight management</p>
+    <p>✔ Enhances lung capacity and endurance</p>
+    <p>✔ Strengthens leg muscles</p>
+    <p>✔ Boosts mental health and reduces stress</p>
     
     <h2>How to Perform</h2>
-    <p>1. Warm up with light jogging or stretching.</p>
-    <p>2. Start at a comfortable pace and maintain proper posture.</p>
-    <p>3. Breathe rhythmically and stay hydrated.</p>
-    <p>4. Gradually increase speed and distance over time.</p>
-    <p>5. Cool down with walking and stretching exercises.</p>
+    <p><strong>1.</strong> Warm up with light jogging or stretching.</p>
+    <p><strong>2.</strong> Start at a comfortable pace and maintain proper posture.</p>
+    <p><strong>3.</strong> Breathe rhythmically and stay hydrated.</p>
+    <p><strong>4.</strong> Gradually increase speed and distance over time.</p>
+    <p><strong>5.</strong> Cool down with walking and stretching exercises.</p>
     
-    <a href="home.html" class="home-btn">Home</a>
+    <a href="home.html" class="home-btn">🏠 Home</a>
   </div>
 </body>
 </html>
